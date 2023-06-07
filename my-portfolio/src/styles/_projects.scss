@@ -1,0 +1,90 @@
+@use "variable";
+
+.projects-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+
+  padding: 3rem 1rem;
+
+  color: white;
+
+  h1 {
+    font-size: 3rem;
+    color: variable.$headerColor;
+
+    span {
+      color: variable.$green;
+    }
+  }
+
+  .project {
+    .project-container {
+      border-top: 1px solid rgba(241, 240, 240, 0.6);
+      display: flex;
+      justify-content: space-between;
+      gap: 0.5rem;
+      align-items: center;
+
+      .image-wrapper {
+        padding: 1.5rem 0;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        width: 100%;
+        height: 100%;
+
+        img {
+          width: 7rem;
+          height: 5rem;
+        }
+
+        .project-info {
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+          span {
+            font-weight: 800;
+            letter-spacing: 0.5px;
+            font-size: 0.8rem;
+          }
+          ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            list-style-type: none;
+
+            li {
+              padding: 0.25rem 0.5rem;
+              border-radius: 1rem;
+              font-size: 0.6rem;
+              border: 1px solid;
+              width: fit-content;
+            }
+          }
+        }
+      }
+
+      .view-wrapper {
+        width: fit-content;
+
+        a {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          font-size: 0.65rem;
+          color: white;
+          text-decoration: none;
+          font-style: italic;
+          font-weight: 500;
+          cursor: pointer;
+
+          ion-icon {
+            font-size: 0.8rem;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}

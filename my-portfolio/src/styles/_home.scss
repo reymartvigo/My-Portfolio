@@ -1,0 +1,89 @@
+@use "variable";
+
+.home-wrapper {
+  border-bottom: 1px solid white;
+  padding: 4rem 2.5rem 3rem;
+  display: flex;
+
+  flex-direction: column;
+  gap: 3rem;
+
+  .intro-wrapper {
+    display: flex;
+
+    flex-direction: column;
+    gap: 2rem;
+    h1 {
+      font-size: 2.8rem;
+      font-weight: 900;
+      letter-spacing: 0.5px;
+
+      gap: 1rem;
+      color: variable.$headerColor;
+
+      span {
+        font-style: italic;
+        cursor: pointer;
+        transition: ease-out 0.25s;
+
+        &:hover {
+          transition: ease-in 0.25s;
+          letter-spacing: 5px;
+          color: variable.$green;
+        }
+      }
+    }
+
+    button {
+      cursor: pointer;
+      border: 1px solid white;
+      outline: none;
+      border-radius: 2rem;
+      font-size: 1rem;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      background: none;
+      color: white;
+      padding: 1rem;
+      gap: 1rem;
+      letter-spacing: 0.5px;
+      transition: ease-out 0.25s;
+      font-style: italic;
+
+      ion-icon {
+        font-size: 1.2rem;
+      }
+      &:hover {
+        font-weight: 800;
+        background: variable.$headerColor;
+        color: variable.$darkest;
+        letter-spacing: 1px;
+        transition: ease-in 0.25s;
+      }
+    }
+  }
+
+  .link-wrapper {
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      list-style-type: none;
+
+      li {
+        font-size: 2rem;
+        color: white;
+
+        a {
+          text-decoration: none;
+          color: white;
+          &:hover {
+            color: variable.$green;
+          }
+        }
+      }
+    }
+  }
+}

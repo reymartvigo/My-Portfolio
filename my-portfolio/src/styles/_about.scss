@@ -1,0 +1,80 @@
+@use "variable";
+
+.about-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 3rem 2rem;
+
+  color: white;
+
+  h1 {
+    font-size: 3rem;
+    color: variable.$headerColor;
+
+    span {
+      color: variable.$green;
+    }
+  }
+
+  .profile-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 2.5rem;
+
+    img {
+      width: 35%;
+    }
+
+    .about-link-wrapper {
+      ul {
+        list-style-type: none;
+        display: flex;
+        gap: 1.5rem;
+        li {
+          font-size: 1.5rem;
+          a {
+            color: white;
+            text-decoration: none;
+
+            &:hover {
+              color: variable.$green;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .info-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    span {
+      font-style: italic;
+
+      &:hover {
+        cursor: pointer;
+        color: variable.$green;
+      }
+    }
+  }
+
+  .course-wrapper {
+    h3 {
+      font-style: italic;
+
+      span {
+        text-decoration: underline;
+        font-weight: 400;
+
+        &:hover {
+          cursor: pointer;
+          color: variable.$green;
+        }
+      }
+    }
+  }
+}

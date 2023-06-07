@@ -1,0 +1,353 @@
+header {
+  position: relative;
+  border-bottom: 1px solid;
+  padding: 1.5rem 1rem;
+  color: rgb(241, 240, 240);
+  display: flex;
+  justify-content: space-between;
+}
+header h1 {
+  font-size: 1.5rem;
+}
+header h1 span {
+  color: rgb(146, 224, 19);
+}
+header .menu-wrapper button {
+  background: none;
+  outline: none;
+  border: none;
+}
+header .menu-wrapper button ion-icon {
+  cursor: pointer;
+  font-size: 2rem;
+  color: rgb(241, 240, 240);
+}
+header .mobile-nav {
+  background: rgb(241, 240, 240);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2rem;
+  height: 100vh;
+  width: 11rem;
+  padding: 1.5rem 1rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+header .mobile-nav button {
+  border: none;
+  outline: none;
+  background: none;
+}
+header .mobile-nav button ion-icon {
+  cursor: pointer;
+  font-size: 2rem;
+  color: rgb(0, 1, 1);
+}
+header .mobile-nav ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  gap: 1rem;
+}
+header .mobile-nav ul li {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0;
+  transition: ease-out 0.25s;
+  color: rgb(0, 1, 1);
+  text-align: left;
+  font-weight: 400;
+  cursor: pointer;
+}
+header .mobile-nav ul li span {
+  font-weight: 800;
+  color: rgb(146, 224, 19);
+}
+header .mobile-nav ul li:hover {
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.home-wrapper {
+  border-bottom: 1px solid white;
+  padding: 4rem 2.5rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.home-wrapper .intro-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.home-wrapper .intro-wrapper h1 {
+  font-size: 2.8rem;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  gap: 1rem;
+  color: rgb(241, 240, 240);
+}
+.home-wrapper .intro-wrapper h1 span {
+  font-style: italic;
+  cursor: pointer;
+  transition: ease-out 0.25s;
+}
+.home-wrapper .intro-wrapper h1 span:hover {
+  transition: ease-in 0.25s;
+  letter-spacing: 5px;
+  color: rgb(146, 224, 19);
+}
+.home-wrapper .intro-wrapper button {
+  cursor: pointer;
+  border: 1px solid white;
+  outline: none;
+  border-radius: 2rem;
+  font-size: 1rem;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  background: none;
+  color: white;
+  padding: 1rem;
+  gap: 1rem;
+  letter-spacing: 0.5px;
+  transition: ease-out 0.25s;
+  font-style: italic;
+}
+.home-wrapper .intro-wrapper button ion-icon {
+  font-size: 1.2rem;
+}
+.home-wrapper .intro-wrapper button:hover {
+  font-weight: 800;
+  background: rgb(241, 240, 240);
+  color: rgb(0, 1, 1);
+  letter-spacing: 1px;
+  transition: ease-in 0.25s;
+}
+.home-wrapper .link-wrapper ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  list-style-type: none;
+}
+.home-wrapper .link-wrapper ul li {
+  font-size: 2rem;
+  color: white;
+}
+.home-wrapper .link-wrapper ul li a {
+  text-decoration: none;
+  color: white;
+}
+.home-wrapper .link-wrapper ul li a:hover {
+  color: rgb(146, 224, 19);
+}
+
+.about-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 3rem 2rem;
+  color: white;
+}
+.about-wrapper h1 {
+  font-size: 3rem;
+  color: rgb(241, 240, 240);
+}
+.about-wrapper h1 span {
+  color: rgb(146, 224, 19);
+}
+.about-wrapper .profile-wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 2.5rem;
+}
+.about-wrapper .profile-wrapper img {
+  width: 35%;
+}
+.about-wrapper .profile-wrapper .about-link-wrapper ul {
+  list-style-type: none;
+  display: flex;
+  gap: 1.5rem;
+}
+.about-wrapper .profile-wrapper .about-link-wrapper ul li {
+  font-size: 1.5rem;
+}
+.about-wrapper .profile-wrapper .about-link-wrapper ul li a {
+  color: white;
+  text-decoration: none;
+}
+.about-wrapper .profile-wrapper .about-link-wrapper ul li a:hover {
+  color: rgb(146, 224, 19);
+}
+.about-wrapper .info-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.about-wrapper .info-wrapper span {
+  font-style: italic;
+}
+.about-wrapper .info-wrapper span:hover {
+  cursor: pointer;
+  color: rgb(146, 224, 19);
+}
+.about-wrapper .course-wrapper h3 {
+  font-style: italic;
+}
+.about-wrapper .course-wrapper h3 span {
+  text-decoration: underline;
+  font-weight: 400;
+}
+.about-wrapper .course-wrapper h3 span:hover {
+  cursor: pointer;
+  color: rgb(146, 224, 19);
+}
+
+.skills-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  color: white;
+  padding: 3rem 2rem;
+}
+.skills-wrapper h1 {
+  font-size: 3rem;
+  color: rgb(241, 240, 240);
+}
+.skills-wrapper h1 span {
+  color: rgb(146, 224, 19);
+}
+.skills-wrapper ul {
+  list-style-type: none;
+}
+.skills-wrapper .skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.skills-wrapper .skills-list li {
+  border-radius: 2rem;
+  padding: 0.25rem 1.25rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 1px solid;
+  transition: ease-out 0.1s;
+}
+.skills-wrapper .skills-list li:hover {
+  cursor: pointer;
+  background-color: rgb(146, 224, 19);
+  font-weight: 800;
+  color: rgb(0, 1, 1);
+  transition: ease-in 0.1s;
+}
+.skills-wrapper .skill-images {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 4rem;
+  justify-content: center;
+}
+.skills-wrapper .skill-images li {
+  font-size: 6.5rem;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.skills-wrapper .skill-images li:hover {
+  cursor: pointer;
+  color: rgb(146, 224, 19);
+}
+
+.projects-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 3rem 1rem;
+  color: white;
+}
+.projects-wrapper h1 {
+  font-size: 3rem;
+  color: rgb(241, 240, 240);
+}
+.projects-wrapper h1 span {
+  color: rgb(146, 224, 19);
+}
+.projects-wrapper .project .project-container {
+  border-top: 1px solid rgba(241, 240, 240, 0.6);
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  align-items: center;
+}
+.projects-wrapper .project .project-container .image-wrapper {
+  padding: 1.5rem 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  height: 100%;
+}
+.projects-wrapper .project .project-container .image-wrapper img {
+  width: 7rem;
+  height: 5rem;
+}
+.projects-wrapper .project .project-container .image-wrapper .project-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.projects-wrapper .project .project-container .image-wrapper .project-info span {
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  font-size: 0.8rem;
+}
+.projects-wrapper .project .project-container .image-wrapper .project-info ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style-type: none;
+}
+.projects-wrapper .project .project-container .image-wrapper .project-info ul li {
+  padding: 0.25rem 0.5rem;
+  border-radius: 1rem;
+  font-size: 0.6rem;
+  border: 1px solid;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.projects-wrapper .project .project-container .view-wrapper {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.projects-wrapper .project .project-container .view-wrapper a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.65rem;
+  color: white;
+  text-decoration: none;
+  font-style: italic;
+  font-weight: 500;
+  cursor: pointer;
+}
+.projects-wrapper .project .project-container .view-wrapper a ion-icon {
+  font-size: 0.8rem;
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: rgb(20, 21, 21);
+}/*# sourceMappingURL=index.css.map */
