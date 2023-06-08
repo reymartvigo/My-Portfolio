@@ -1,7 +1,8 @@
 @use "variable";
 
 .home-wrapper {
-  border-bottom: 1px solid white;
+  z-index: 0;
+  border-bottom: 1px solid rgba(241, 240, 240, 0.3);
   padding: 4rem 2.5rem 3rem;
   display: flex;
 
@@ -14,10 +15,14 @@
     flex-direction: column;
     gap: 2rem;
     h1 {
-      font-size: 2.8rem;
+      line-height: 3.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+
+      font-size: 2.65rem;
       font-weight: 900;
       letter-spacing: 0.5px;
-
       gap: 1rem;
       color: variable.$headerColor;
 
@@ -31,6 +36,10 @@
           letter-spacing: 5px;
           color: variable.$green;
         }
+      }
+
+      ion-icon {
+        font-size: 1.5rem;
       }
     }
 

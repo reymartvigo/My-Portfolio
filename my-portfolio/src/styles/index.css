@@ -1,6 +1,6 @@
 header {
   position: relative;
-  border-bottom: 1px solid;
+  border-bottom: 1px solid rgba(241, 240, 240, 0.3);
   padding: 1.5rem 1rem;
   color: rgb(241, 240, 240);
   display: flex;
@@ -23,6 +23,7 @@ header .menu-wrapper button ion-icon {
   color: rgb(241, 240, 240);
 }
 header .mobile-nav {
+  z-index: 999;
   background: rgb(241, 240, 240);
   display: flex;
   flex-direction: column;
@@ -71,7 +72,8 @@ header .mobile-nav ul li:hover {
 }
 
 .home-wrapper {
-  border-bottom: 1px solid white;
+  z-index: 0;
+  border-bottom: 1px solid rgba(241, 240, 240, 0.3);
   padding: 4rem 2.5rem 3rem;
   display: flex;
   flex-direction: column;
@@ -83,7 +85,11 @@ header .mobile-nav ul li:hover {
   gap: 2rem;
 }
 .home-wrapper .intro-wrapper h1 {
-  font-size: 2.8rem;
+  line-height: 3.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 2.65rem;
   font-weight: 900;
   letter-spacing: 0.5px;
   gap: 1rem;
@@ -98,6 +104,9 @@ header .mobile-nav ul li:hover {
   transition: ease-in 0.25s;
   letter-spacing: 5px;
   color: rgb(146, 224, 19);
+}
+.home-wrapper .intro-wrapper h1 ion-icon {
+  font-size: 1.5rem;
 }
 .home-wrapper .intro-wrapper button {
   cursor: pointer;
@@ -336,6 +345,59 @@ header .mobile-nav ul li:hover {
 .projects-wrapper .project .project-container .view-wrapper a ion-icon {
   font-size: 0.8rem;
   color: white;
+}
+.projects-wrapper .project .project-container .view-wrapper a:hover {
+  color: rgb(146, 224, 19);
+}
+
+footer {
+  border-top-right-radius: 3rem;
+  border-top-left-radius: 3rem;
+  background-color: rgb(0, 1, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  width: 100%;
+  padding: 5rem 2rem;
+  color: white;
+}
+footer h1 {
+  text-align: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 3.25rem;
+  letter-spacing: 0.5px;
+  font-weight: 900;
+}
+footer .connect-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 85%;
+}
+footer .connect-wrapper .connect {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid;
+  padding: 1rem 0;
+}
+footer .connect-wrapper .connect span {
+  letter-spacing: 0.5px;
+}
+footer .connect-wrapper .connect span:hover {
+  color: rgb(146, 224, 19);
+}
+footer .connect-wrapper .connect ion-icon {
+  font-size: 2rem;
+}
+footer .connect-wrapper .connect a {
+  text-decoration: none;
+  color: white;
+}
+footer .connect-wrapper .connect a:hover {
+  color: rgb(146, 224, 19);
 }
 
 * {
