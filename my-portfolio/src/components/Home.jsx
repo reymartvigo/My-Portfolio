@@ -1,40 +1,24 @@
 import React from 'react'
-import { useEffect, useRef } from 'react';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-gsap.registerPlugin(ScrollTrigger);
+
+
 import '../styles/index.css'
 
 
 const Home = () => {
 
-
-    const textRef = useRef(null);
-    useEffect(() => {
-
-        gsap.fromTo(
-            textRef.current,
-            { opacity: 0, y: -100 },
-            {
-                opacity: 1,
-                y: 0,
-                duration: 1,
-                delay: 0.25,
-                scrollTrigger: {
-                    trigger: textRef.current,
-                    start: 'top 100%',
-                }
-            }
-        )
+    const handleDownloadCV = () => {
+        const downloadLink = document.createElement('a');
+        downloadLink.href = '/public/Vigo, Reymart L. ( CV).pdf';
+        downloadLink.click();
+    }
 
 
-
-    }, [])
     return (
-        <div id="home-section" className="home-wrapper" ref={textRef}>
+
+        <div id="home-section" className="home-wrapper" >
             <div className="intro-wrapper" >
                 <h1>FRONTEND <ion-icon name="code-outline"></ion-icon> <span >DEVELOPER</span> </h1>
-                <button aria-label="download-cv">DOWNLOAD CV <ion-icon name="code-download-outline"></ion-icon></button>
+                <button onClick={handleDownloadCV} aria-label="download-cv">DOWNLOAD CV<ion-icon name="code-download-outline"></ion-icon></button>
             </div>
 
             <div className="link-wrapper" >
@@ -45,6 +29,7 @@ const Home = () => {
                 </ul>
             </div>
         </div>
+
     )
 }
 

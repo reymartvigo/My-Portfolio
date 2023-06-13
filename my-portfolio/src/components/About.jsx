@@ -1,48 +1,10 @@
 import React from 'react'
 import '../styles/index.css';
 import coding from '../assets/coding.png'
-
-
-import { useEffect, useRef } from 'react';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-gsap.registerPlugin(ScrollTrigger);
 const About = () => {
-
-    const componentRef = useRef(null);
-    useEffect(() => {
-        const observer = new IntersectionObserver(
-            (entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        gsap.fromTo(
-                            entry.target,
-                            { opacity: 0, y: 100 },
-                            {
-                                opacity: 1,
-                                y: 0,
-                                delay: 1,
-                                duration: 1,
-                            }
-                        );
-                        observer.unobserve(entry.target); // Stop observing once the component is visible
-                    }
-                });
-            },
-            { threshold: 0.1 } // Adjust the threshold as per your requirements
-        );
-
-        if (componentRef.current) {
-            observer.observe(componentRef.current);
-        }
-
-        return () => {
-            observer.disconnect(); // Clean up the observer when the component unmounts
-        };
-    }, []);
     return (
         <>
-            <div id="about-section" className='about-wrapper' ref={componentRef}>
+            <div id="about-section" className='about-wrapper' >
                 <h1><span>.</span>about</h1>
 
                 <div className='profile-wrapper'>

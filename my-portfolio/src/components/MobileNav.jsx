@@ -25,7 +25,7 @@ const MobileNav = ({ closeMenu }) => {
                     </li>
                     <li key="about">
                         <Link activeClass="active" to="about-section" spy={true} smooth={true} offset={10} duration={500} onClick={handleCloseMenu}>
-                            <span>.</span>About  </Link>
+                            <span>.</span>About</Link>
                     </li>
 
                     <li key="skills">

@@ -1,44 +1,11 @@
 import React from 'react'
-import { useEffect, useRef } from 'react';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-gsap.registerPlugin(ScrollTrigger);
+
 const Skills = () => {
 
-    const componentRef = useRef(null);
-    useEffect(() => {
-        const observer = new IntersectionObserver(
-            (entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        gsap.fromTo(
-                            entry.target,
-                            { opacity: 0, x: -100 },
-                            {
-                                opacity: 1,
-                                x: 0,
-                                delay: 0.25,
-                                duration: 1,
-                            }
-                        );
-                        observer.unobserve(entry.target); // Stop observing once the component is visible
-                    }
-                });
-            },
-            { threshold: 0.1 } // Adjust the threshold as per your requirements
-        );
 
-        if (componentRef.current) {
-            observer.observe(componentRef.current);
-        }
-
-        return () => {
-            observer.disconnect(); // Clean up the observer when the component unmounts
-        };
-    }, []);
     return (
         <>
-            <div id="skills-section" className='skills-wrapper' ref={componentRef}>
+            <div id='skills-section' className='skills-wrapper' >
 
                 <h1><span>.</span>skills</h1>
                 <ul className='skills-list'>
