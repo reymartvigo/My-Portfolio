@@ -1,16 +1,18 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import { Link } from 'react-scroll';
+import { Link } from 'react-scroll'
 
 const MobileNav = ({ closeMenu }) => {
+
+
+    const handleCloseMenu = () => {
+        closeMenu();
+    }
 
     MobileNav.propTypes = {
         closeMenu: PropTypes.func.isRequired,
     };
-    const handleCloseMenu = () => {
-        closeMenu();
-    }
 
 
     return (
@@ -22,14 +24,18 @@ const MobileNav = ({ closeMenu }) => {
                         <Link activeClass="active" to="home-section" spy={true} smooth={true} offset={10} duration={500} onClick={handleCloseMenu}>
                             <span>.</span>Home
                         </Link>
+
                     </li>
                     <li key="about">
                         <Link activeClass="active" to="about-section" spy={true} smooth={true} offset={10} duration={500} onClick={handleCloseMenu}>
-                            <span>.</span>About</Link>
+                            <span>.</span>About
+                        </Link>
                     </li>
 
                     <li key="skills">
-                        <Link activeClass="active" to="skills-section" spy={true} smooth={true} offset={10} duration={500} onClick={handleCloseMenu}><span>.</span>Skills</Link>
+                        <Link activeClass="active" to="skills-section" spy={true} smooth={true} offset={10} duration={500} onClick={handleCloseMenu}>
+                            <span>.</span>Skills
+                        </Link>
                     </li>
                     <li key="projects">
                         <Link activeClass="active" to="projects-section" spy={true} smooth={true} offset={10} duration={500} onClick={handleCloseMenu}>

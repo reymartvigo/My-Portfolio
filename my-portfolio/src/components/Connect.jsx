@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Text from './Text';
 const Connect = () => {
     return (
         <footer id="connect-section">
@@ -23,6 +23,13 @@ const Connect = () => {
                     <span key="twitter"><a href="https://twitter.com/reymart_vigo" target='_blank'><ion-icon name="logo-twitter"></ion-icon></a></span>
                 </div>
             </div>
+
+            <div className="credits-to-owner">
+                <p><span>&#169;</span> 2023, .karim ghamlouch portfolio</p>
+                <p>Designed by <span className="designer">.karim</span></p>
+            </div>
+
+            <Text />
         </footer >
     )
 }

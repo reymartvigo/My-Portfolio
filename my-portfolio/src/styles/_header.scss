@@ -28,9 +28,12 @@ header {
       }
     }
   }
+  .desktop-nav {
+    display: none;
+  }
 
   .mobile-nav {
-    z-index: 999;
+    z-index: 2;
     background: variable.$headerColor;
     display: flex;
     flex-direction: column;
@@ -79,6 +82,94 @@ header {
         &:hover {
           letter-spacing: 1px;
           cursor: pointer;
+        }
+      }
+    }
+  }
+
+  // Tablet Viewport //
+  @include variable.respond-to(tablet) {
+    padding: 2rem;
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    .menu-wrapper {
+      button {
+        ion-icon {
+          font-size: 2.5rem;
+        }
+      }
+    }
+
+    .mobile-nav {
+      width: 15rem;
+      padding: 2rem;
+
+      button {
+        ion-icon {
+          font-size: 2.5rem;
+        }
+      }
+
+      ul {
+        li {
+          font-size: 1.25rem;
+
+          &:hover {
+            letter-spacing: 1.5px;
+          }
+        }
+      }
+    }
+  }
+
+  @include variable.respond-to(laptop) {
+    align-items: center;
+    padding: 1.75rem 3rem;
+
+    .menu-wrapper,
+    .mobile-nav {
+      display: none;
+    }
+
+    .desktop-nav {
+      display: flex;
+      ul {
+        list-style-type: none;
+        display: flex;
+        gap: 1.5rem;
+        li {
+          font-weight: 500;
+          letter-spacing: 0.5px;
+          cursor: pointer;
+          &:hover {
+            transition: ease-in 0.25s;
+            color: variable.$green;
+          }
+        }
+      }
+    }
+  }
+
+  @include variable.respond-to(desktop) {
+    padding: 1.75rem 9rem;
+
+    .desktop-nav {
+      display: flex;
+      ul {
+        list-style-type: none;
+        display: flex;
+        gap: 1.5rem;
+        li {
+          font-weight: 500;
+          letter-spacing: 0.5px;
+          cursor: pointer;
+          &:hover {
+            transition: ease-in 0.25s;
+            color: variable.$green;
+          }
         }
       }
     }

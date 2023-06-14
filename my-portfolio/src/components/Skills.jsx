@@ -5,7 +5,7 @@ const Skills = () => {
 
     return (
         <>
-            <div id='skills-section' className='skills-wrapper' >
+            <div id="skills-section" className='skills-wrapper'>
 
                 <h1><span>.</span>skills</h1>
                 <ul className='skills-list'>

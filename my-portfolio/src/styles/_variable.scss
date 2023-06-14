@@ -2,3 +2,23 @@ $dark: rgb(20, 21, 21);
 $green: rgb(146, 224, 19);
 $headerColor: rgb(241, 240, 240);
 $darkest: rgb(0, 1, 1);
+
+$breakpoint-tablet: 768px;
+$breakpoint-laptop: 1024px;
+$breakpoint-desktop: 1440px;
+
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == tablet {
+    @media screen and (min-width: $breakpoint-tablet) {
+      @content;
+    }
+  } @else if $breakpoint == laptop {
+    @media screen and (min-width: $breakpoint-laptop) {
+      @content;
+    }
+  } @else if $breakpoint == desktop {
+    @media screen and (min-width: $breakpoint-desktop) {
+      @content;
+    }
+  }
+}

@@ -57,4 +57,78 @@
       }
     }
   }
+
+  @include variable.respond-to(tablet) {
+    padding: 2rem 4rem;
+    gap: 3rem;
+    h1 {
+      font-size: 4rem;
+    }
+    .skills-list {
+      width: 75%;
+      gap: 1rem;
+
+      li {
+        padding: 0.7rem 1.4rem;
+      }
+    }
+
+    .skill-images {
+      margin-top: 2rem;
+      display: flex;
+
+      gap: 2.5rem;
+
+      li {
+        font-size: 4rem;
+      }
+    }
+  }
+
+  @include variable.respond-to(laptop) {
+    padding: 2rem 4rem;
+    gap: 3rem;
+    h1 {
+      font-size: 5rem;
+    }
+    .skills-list {
+      width: 55%;
+      gap: 1rem;
+    }
+
+    .skill-images {
+      margin-top: 2rem;
+      display: flex;
+
+      gap: 2.5rem;
+
+      li {
+        font-size: 5rem;
+      }
+    }
+  }
+
+  @include variable.respond-to(desktop) {
+    padding: 2rem 8rem;
+    gap: 3rem;
+    h1 {
+      font-size: 5rem;
+    }
+    .skills-list {
+      padding-right: 1rem;
+      width: 50%;
+      gap: 1rem;
+    }
+
+    .skill-images {
+      margin-top: 4rem;
+      display: flex;
+
+      gap: 4rem;
+
+      li {
+        font-size: 6rem;
+      }
+    }
+  }
 }

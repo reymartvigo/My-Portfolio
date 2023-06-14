@@ -1,0 +1,67 @@
+@use "variable";
+
+.text-slider {
+  width: 100%;
+  border-bottom: 1px solid rgba(241, 240, 240, 0.3);
+  overflow: hidden;
+  padding: 0.85rem 0;
+  #laptop {
+    display: none;
+  }
+  .text {
+    margin-left: auto;
+    animation: move 10s linear infinite;
+    transform: translate(100%);
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    right: 0;
+
+    p {
+      font-size: 0.5rem;
+      width: fit-content;
+      color: white;
+    }
+
+    span {
+      font-style: italic;
+      color: variable.$green;
+    }
+
+    ion-icon {
+      color: variable.$green;
+    }
+  }
+
+  @keyframes move {
+    to {
+      right: 100%;
+      transform: translate(-100%);
+    }
+  }
+
+  @include variable.respond-to(laptop) {
+    .text {
+      p {
+        font-size: 0.9rem;
+      }
+      #laptop {
+        align-items: center;
+        gap: 0.8rem;
+        display: flex;
+      }
+    }
+  }
+
+  @include variable.respond-to(desktop) {
+    .text {
+      gap: 1.5rem;
+      p {
+        font-size: 1.2rem;
+      }
+      #laptop {
+        display: flex;
+      }
+    }
+  }
+}
