@@ -9,6 +9,7 @@ const Home = () => {
     const handleDownloadCV = () => {
         const downloadLink = document.createElement('a');
         downloadLink.href = '/public/Vigo, Reymart L. ( CV).pdf';
+        downloadLink.download = 'Vigo, Reymart L. ( CV).pdf';
         downloadLink.click();
     }
 
