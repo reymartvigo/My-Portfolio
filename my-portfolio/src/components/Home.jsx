@@ -4,17 +4,14 @@ import React from 'react'
 
 import '../styles/index.css'
 
-
+import CV from '../../public/Vigo, Reymart L. ( CV).pdf';
 const Home = () => {
-
-
-
 
     return (
         <div id="home-section" className="home-wrapper" >
             <div className="intro-wrapper" >
                 <h1>FRONTEND <span><ion-icon name="code-outline"></ion-icon>DEVELOPER</span> </h1>
-                <a href='/public/Vigo, Reymart L. ( CV).pdf' target="_blank" > <button aria-label="download-cv">DOWNLOAD CV<ion-icon name="code-download-outline"></ion-icon></button>
+                <a href={CV} target="_blank"> <button aria-label="download-cv">DOWNLOAD CV<ion-icon name="code-download-outline"></ion-icon></button>
                 </a>
             </div>
 
