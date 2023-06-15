@@ -1,8 +1,15 @@
+import { useEffect } from "react";
 import React from 'react'
-
+import Aos from "aos";
+import 'aos/dist/aos.css';
 const ProjectItem = ({ image, title, link, skill1, skill2, skill3, skill4 }) => {
+
+    useEffect(() => {
+        Aos.init();
+    }, [])
+
     return (
-        <div className="project-container">
+        <div className="project-container" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">
             <div className="image-wrapper">
                 <img src={image} alt="" aria-hidden="true"></img>
 

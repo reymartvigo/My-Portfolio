@@ -1,8 +1,17 @@
+import { useEffect } from 'react';
+
 import React from 'react'
 import Text from './Text';
+import Aos from "aos";
+import 'aos/dist/aos.css';
 const Connect = () => {
+
+    useEffect(() => {
+        Aos.init
+    }, [])
+
     return (
-        <footer id="connect-section">
+        <footer id="connect-section" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
             <h1>LET'S CONNECT</h1>
 
             <div className="connect-wrapper">

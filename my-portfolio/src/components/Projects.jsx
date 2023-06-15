@@ -1,4 +1,9 @@
+import { useEffect } from "react";
 import React from 'react'
+
+import Aos from "aos";
+import 'aos/dist/aos.css';
+
 
 import TodoImg from '../assets/react-todoapplication.netlify.app_.png';
 import InteractiveCommentApp from '../assets/interactive-comment-section-reactjs.netlify.app_.png';
@@ -7,14 +12,21 @@ import AgeCalc from '../assets/age-calculator-application-frontend.netlify.app_.
 import Calculator from '../assets/calculatorapplicationfrontend.netlify.app_.png';
 import Advice from '../assets/advicegeneratorpage.netlify.app_.png'
 import ProjectItem from './ProjectItem'
+
+
 const Projects = () => {
+    useEffect(() => {
+        Aos.init();
+    }, [])
+
     return (
 
         <div id="projects-section" className="projects-wrapper">
-            <h1><span>.</span>Projects</h1>
+            <h1 data-aos="zoom-out" data-aos-duration="1000"><span>.</span>Projects</h1>
 
             <div className="project">
                 <ProjectItem
+
                     image={TodoImg}
                     title="Todo Application"
                     skill1="React + Vite"

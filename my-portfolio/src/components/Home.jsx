@@ -1,3 +1,4 @@
+
 import React from 'react'
 
 
@@ -6,19 +7,15 @@ import '../styles/index.css'
 
 const Home = () => {
 
-    const handleDownloadCV = () => {
-        const downloadLink = document.createElement('a');
-        downloadLink.href = '/public/Vigo, Reymart L. ( CV).pdf';
-        downloadLink.download = 'Vigo, Reymart L. ( CV).pdf';
-        downloadLink.click();
-    }
+
 
 
     return (
         <div id="home-section" className="home-wrapper" >
             <div className="intro-wrapper" >
                 <h1>FRONTEND <span><ion-icon name="code-outline"></ion-icon>DEVELOPER</span> </h1>
-                <button onClick={handleDownloadCV} aria-label="download-cv">DOWNLOAD CV<ion-icon name="code-download-outline"></ion-icon></button>
+                <a href='/public/Vigo, Reymart L. ( CV).pdf' target="_blank" > <button aria-label="download-cv">DOWNLOAD CV<ion-icon name="code-download-outline"></ion-icon></button>
+                </a>
             </div>
 
             <div className="link-wrapper" >

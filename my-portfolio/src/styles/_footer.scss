@@ -72,6 +72,12 @@ footer {
     }
   }
 
+  .text-slider {
+    border-top: 1px solid rgba(241, 240, 240, 0.3);
+    position: absolute;
+    bottom: 0;
+  }
+
   @include variable.respond-to(laptop) {
     border-top-right-radius: 5rem;
     border-top-left-radius: 5rem;
@@ -111,12 +117,6 @@ footer {
       .designer {
         font-weight: 700;
       }
-    }
-
-    .text-slider {
-      border-top: 1px solid rgba(241, 240, 240, 0.3);
-      position: absolute;
-      bottom: 0;
     }
   }
   @include variable.respond-to(desktop) {

@@ -214,34 +214,39 @@
       }
     }
 
-    button {
-      -webkit-animation: bounce-in-top 1.1s both;
-      animation: bounce-in-top 1.1s both;
-      cursor: pointer;
-      border: 1px solid white;
-      outline: none;
-      border-radius: 2rem;
-      font-size: 1rem;
-      justify-content: center;
-      display: flex;
-      align-items: center;
-      background: none;
-      color: white;
-      padding: 1rem;
-      gap: 1rem;
-      letter-spacing: 0.5px;
-      transition: ease-out 0.25s;
-      font-style: italic;
+    a {
+      text-decoration: none;
+      button {
+        width: 100%;
+        -webkit-animation: bounce-in-top 1.1s both;
+        animation: bounce-in-top 1.1s both;
+        cursor: pointer;
+        border: 1px solid white;
+        outline: none;
+        border-radius: 2rem;
+        font-size: 1rem;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        background: none;
 
-      ion-icon {
-        font-size: 1.2rem;
-      }
-      &:hover {
-        font-weight: 800;
-        background: variable.$headerColor;
-        color: variable.$darkest;
-        letter-spacing: 1px;
-        transition: ease-in 0.25s;
+        padding: 1rem;
+        gap: 1rem;
+        color: white;
+        letter-spacing: 0.5px;
+        transition: ease-out 0.25s;
+        font-style: italic;
+
+        ion-icon {
+          font-size: 1.2rem;
+        }
+        &:hover {
+          font-weight: 800;
+          letter-spacing: 1px;
+          transition: ease-in 0.25s;
+          color: variable.$darkest;
+          background: variable.$headerColor;
+        }
       }
     }
   }
@@ -323,12 +328,12 @@
           font-size: 5rem;
         }
       }
-
-      button {
+      a {
         width: 50%;
-
-        ion-icon {
-          font-size: 1.5rem;
+        button {
+          ion-icon {
+            font-size: 1.5rem;
+          }
         }
       }
     }
