@@ -14,13 +14,13 @@ const Skills = () => {
                 <h1 data-aos="fade-down"><span>.</span>skills</h1>
                 <ul className='skills-list'>
                     <li data-aos="fade-up" key="html">Html</li>
-                    <li data-aos="fade-up" data-aos-delay="500" key="react">React Javascript</li>
-                    <li data-aos="fade-up" data-aos-delay="700" key="js">JavaScript</li>
-                    <li data-aos="fade-up" data-aos-delay="900" key="bootstrap">Bootstrap 5</li>
-                    <li data-aos="fade-up" data-aos-delay="1100" key="scss">SCSS - CSS Preprocessor</li>
-                    <li data-aos="fade-up" data-aos-delay="1110" key="css">Cascading Stylesheet</li>
-                    <li data-aos="fade-up" data-aos-delay="1115" key="git">Git/GitHub</li>
-                    <li data-aos="fade-up" data-aos-delay="1120" key="npm">npm</li>
+                    <li data-aos="fade-up" key="react">React Javascript</li>
+                    <li data-aos="fade-up" key="js">JavaScript</li>
+                    <li data-aos="fade-up" key="bootstrap">Bootstrap 5</li>
+                    <li data-aos="fade-up" key="scss">SCSS - CSS Preprocessor</li>
+                    <li data-aos="fade-up" key="css">Cascading Stylesheet</li>
+                    <li data-aos="fade-up" key="git">Git/GitHub</li>
+                    <li data-aos="fade-up" key="npm">npm</li>
                 </ul>
 
                 <ul className="skill-images">
