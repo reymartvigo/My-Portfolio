@@ -4,7 +4,7 @@ import React from 'react'
 import Aos from "aos";
 import 'aos/dist/aos.css';
 
-
+import IpAddress from '../assets/ipaddress.png';
 import TodoImg from '../assets/react-todoapplication.netlify.app_.png';
 import InteractiveCommentApp from '../assets/interactive-comment-section-reactjs.netlify.app_.png';
 import CountdownTimer from '../assets/launch-countdowntimer.netlify.app_.png';
@@ -25,6 +25,18 @@ const Projects = () => {
             <h1 data-aos="zoom-out" data-aos-duration="1000"><span>.</span>Projects</h1>
 
             <div className="project">
+
+
+                <ProjectItem
+                    image={IpAddress}
+                    title="Ip Address Tracker"
+                    skill1="React JS"
+                    skill2="HTML"
+                    skill3="TailwindCSS"
+                    skill4="Mobile First"
+                    link="https://ip-address-tracker-api.netlify.app/"
+                />
+
                 <ProjectItem
 
                     image={TodoImg}
@@ -85,6 +97,8 @@ const Projects = () => {
                     skill4="Mobile First"
                     link="https://advicegeneratorpage.netlify.app/"
                 />
+
+
 
             </div>
 
